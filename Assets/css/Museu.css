@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+}
+
+
+header.heder-section {
+    display: block;
+    background-image: url('../Img/Casa-Museu-Santana-Cruz-Machado-2.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3rem;
+    color: #ffcc33;
+}
+
+.container{
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 50px;
+    
+    
+}
+
+.carossel{
+   margin: auto ; 
+   max-width: 600px;
+   max-height: 500px;
+   
+}
+
+.contatos {
+    margin-top: 50px;
+    display: flex;
+    padding: 40px 0;
+    text-align: center;
+    background-color: #f4f4f4;
+
+    
+}
+
+.contatos h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.contatos form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.contatos form label {
+    margin-bottom: 10px;
+    display: block;
+}
+
+.contatos form input,
+.contatos form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contatos form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    
+}   

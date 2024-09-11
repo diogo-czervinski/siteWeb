@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header.heder-section {
+    display: block;
+    background-image: url('../Img/fundo\ \(3\).png');
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    text-align: center;
+}
+
+
+
+header h1 {
+    font-size: 3rem;
+    color: #ffcc33;
+}
+
+header p {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    color: #fff;
+}
+
+.Descrição {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.pontos_turisticos {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.pontos_turisticos h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.pontos_turisticos .imagens {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.pontos_turisticos img {
+    width: auto;
+    max-width: 400px;
+    height: 250PX;
+    border-radius: 10px;
+}
+
+/* Seção Timeline */
+.timeline-seleção {
+    position: relative;
+    padding: 60px 0;
+    background-color: #f9f9f9;
+}
+
+
+.timeline-seleção .container {
+    position: relative;
+    width: 60%;
+    margin: 0 auto;
+}
+
+/* Linha vertical no centro */
+.timeline-seleção .container::before {
+    content: '';
+    position: absolute;
+    left: 50%; 
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background-color: #000000; 
+    z-index: 1; 
+}
+
+
+.timeline-item {
+  
+    position: relative;
+    width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+    z-index: 2;
+}
+
+/* Para os itens que ficam à esquerda da linha */
+.timeline-item:nth-child(odd) {
+    left: -10%;
+    text-align: left;
+}
+
+/* Para os itens que ficam à direita da linha */
+.timeline-item:nth-child(even) {
+    left: 60%;
+    text-align: left;
+}
+
+
+.timeline-item .timeline-circulo {
+    position: absolute;
+    left: 120%; 
+    width: 50px;
+    height: 50px;
+    background-color: #00ff00; 
+    border: 15px solid  #ffff00; 
+    border-radius: 50%;
+    transform: translate(-50%, -50%); 
+    z-index: 2; 
+    
+    
+}
+
+/* Estilização dos textos */
+.timeline-item h3 {
+    font-size: 1.5rem;
+    margin: 20px 0 10px;
+    color: #333;
+}
+
+.timeline-item p {
+    color: #666;
+    margin-bottom: 15px;
+    padding: 0 20px;
+}
+
+/* Botão de cada item */
+.timeline-item button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Alinhamento dos botões */
+.timeline-item:nth-child(odd) button {
+    float: left;
+}
+
+.timeline-item:nth-child(even) button {
+    float: left;
+}
+
+.contatos {
+    padding: 40px 0;
+    text-align: center;
+    
+}
+
+.contatos h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.contatos form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.contatos form label {
+    margin-bottom: 10px;
+    display: block;
+}
+
+.contatos form input,
+.contatos form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contatos form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .pontos_turisticos {
+        display: none;
+        
+    }
+
+
+    .timeline-section .container {
+        width: 100%;
+    }
+    
+    .timeline-item {
+        width: 100%;
+        text-align: center;
+    }
+
+    .timeline-item:nth-child(odd),
+    .timeline-item:nth-child(even) {
+        left: 0;
+        text-align: center;
+    }
+
+    .timeline-item button {
+        float: none;
+    }
+    .timeline-section .container::before{
+        
+        display: none;
+    }
+}
+
+
